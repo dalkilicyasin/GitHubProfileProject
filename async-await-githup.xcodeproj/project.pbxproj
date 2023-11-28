@@ -14,6 +14,8 @@
 		D94942682B13B67800460464 /* async_await_githupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94942672B13B67800460464 /* async_await_githupTests.swift */; };
 		D94942722B13B67800460464 /* async_await_githupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94942712B13B67800460464 /* async_await_githupUITests.swift */; };
 		D94942742B13B67800460464 /* async_await_githupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94942732B13B67800460464 /* async_await_githupUITestsLaunchTests.swift */; };
+		D94942882B13BC8400460464 /* GitHubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94942872B13BC8400460464 /* GitHubUser.swift */; };
+		D949428C2B13CB9400460464 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D949428B2B13CB9400460464 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		D949426D2B13B67800460464 /* async-await-githupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "async-await-githupUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94942712B13B67800460464 /* async_await_githupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = async_await_githupUITests.swift; sourceTree = "<group>"; };
 		D94942732B13B67800460464 /* async_await_githupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = async_await_githupUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D94942872B13BC8400460464 /* GitHubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUser.swift; sourceTree = "<group>"; };
+		D949428B2B13CB9400460464 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,12 @@
 		D94942552B13B67600460464 /* async-await-githup */ = {
 			isa = PBXGroup;
 			children = (
+				D94942842B13BA7D00460464 /* CustomView */,
+				D94942832B13BA6E00460464 /* ViewModel */,
+				D94942822B13BA6300460464 /* View */,
+				D94942812B13BA5100460464 /* Models */,
+				D94942802B13BA4700460464 /* Network */,
 				D94942562B13B67600460464 /* async_await_githupApp.swift */,
-				D94942582B13B67600460464 /* ContentView.swift */,
 				D949425A2B13B67800460464 /* Assets.xcassets */,
 				D949425C2B13B67800460464 /* Preview Content */,
 			);
@@ -125,6 +133,76 @@
 				D94942732B13B67800460464 /* async_await_githupUITestsLaunchTests.swift */,
 			);
 			path = "async-await-githupUITests";
+			sourceTree = "<group>";
+		};
+		D94942802B13BA4700460464 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D949428A2B13CB2F00460464 /* Enpoint */,
+				D94942892B13CB0800460464 /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D94942812B13BA5100460464 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D94942862B13BA9500460464 /* Data */,
+				D94942852B13BA8C00460464 /* ResponseModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D94942822B13BA6300460464 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D94942582B13B67600460464 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D94942832B13BA6E00460464 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D94942842B13BA7D00460464 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		D94942852B13BA8C00460464 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				D94942872B13BC8400460464 /* GitHubUser.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		D94942862B13BA9500460464 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D94942892B13CB0800460464 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D949428B2B13CB9400460464 /* NetworkManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D949428A2B13CB2F00460464 /* Enpoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D949428C2B13CB9400460464 /* NetworkManager.swift in Sources */,
 				D94942592B13B67600460464 /* ContentView.swift in Sources */,
+				D94942882B13BC8400460464 /* GitHubUser.swift in Sources */,
 				D94942572B13B67600460464 /* async_await_githupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
